@@ -1,0 +1,101 @@
+$screen-sm-min: 600px;
+$screen-md-min: 700px;
+$screen-lg-min: 1000px;
+
+.formContainer {
+    background-image: linear-gradient(to right, #d9a7c7, #fffcdc);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper {
+    background-color: #fff;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30vw;
+
+    @media (max-width: $screen-sm-min) {
+        width: 40vw;
+    }
+
+    .logo {
+        background: -webkit-linear-gradient(darkblue, pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 8vw;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: 8vh;
+        }
+    }
+
+    .title {
+        color: #5d5b8d;
+        font-size: 2vw;
+        font-weight: 500;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: 3vh;
+            font-weight: 600;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            padding: 13px;
+            border: none;
+            width: 30vw;
+            border-bottom: 1px solid #a7bc55;
+
+            &::placeholder {
+                color: rgb(175, 175, 175);
+            }
+
+            @media (max-width: $screen-sm-min) {
+                width: 25vh;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #8da4f1;
+            cursor: pointer;
+            img {
+                width: 4vw;
+                border-radius: 50%;
+
+                @media (max-width: $screen-sm-min) {
+                    width: 7vh;
+                }
+            }
+        }
+
+        button {
+            background-color: #7b96ec;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        color: #5d5b8d;
+        font-size: 2vh;
+    }
+
+}
